@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QualityWorks Simple Test Suite">
+  <test name="Simple Test Suite">
+	<parameter name="url" value="http://www.qualityworkscg.com"></parameter>
+    <classes>
+      <class name="com.qualityworkscg.tests.HomeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
