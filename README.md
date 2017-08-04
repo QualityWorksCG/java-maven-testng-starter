@@ -116,6 +116,10 @@ Navigate to the [Eclipse download page](https://eclipse.org/downloads/) and down
 
 Navigate to the location of project then execute `mvn test`.
 
+Expected output:
+
+![Expected Test Output](.README/expected-test-output.png)
+
 ### <a id="special-notes"></a> Special Notes
 
 * Ensure FF version 48 or higher is installed
