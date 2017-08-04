@@ -17,6 +17,7 @@ There are a few things we need before running the tests. These are:
     
     * [From Eclipse](#from-eclipse)
     * [From Terminal](#from-command-line)
+1. [Special Notes](#special-notes)
 
 
 ## <a id="eclipse-setup"></a>Java Installation / Update
@@ -112,6 +113,10 @@ Navigate to the [Eclipse download page](https://eclipse.org/downloads/) and down
 ### <a id="from-command-line"></a> From the Command Line
 
 Navigate to the location of project then execute `mvn test`.
+
+### <a id="special-notes"></a> Special Notes
+
+* Ensure FF version 48 or higher is installed
 
 ## Contributing
 Feel free to submit a pull requests! For specifics on how to contribute to this project, check out the  [contributing file](CONTRIBUTING.md).
