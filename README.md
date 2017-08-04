@@ -5,6 +5,8 @@
 
 This is a simple project that would allow anyone to get up and running with Java, Maven, Selenium and TestNG. It also explains how to execute a simple test that will assert the title of a page.
 
+Currently the project has one test that will navigate to `http://www.qualityworkscg.com/` and verify the title matches `QualityWorks Consulting Group`
+
 ## Table of Contents
 There are a few things we need before running the tests. These are:
 
