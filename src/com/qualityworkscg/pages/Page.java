@@ -1,12 +1,17 @@
 package com.qualityworkscg.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Page {
   
   protected WebDriver driver;
+  WebDriverWait wait;
   
   public static final String SERVICES_LOCATOR = "a[title='Services']";
   public static final String MOBILE_AUTOMATION_LOCATOR = "a[title='Mobile & Web Test Automation']";
@@ -16,45 +21,47 @@ public class Page {
   
   public Page(WebDriver driver) {
     this.driver = driver;
+    wait = new WebDriverWait (driver, 10);
   }
 
   public void navigate(String url) {
     driver.navigate().to(url);
-  }
+  } 
   
   public String getTitle() {
     return driver.getTitle();
   }
   
   //Function to click the Services dropdown
-  public void clickServices(){
-	  WebElement pageElement = driver.findElement(By.cssSelector(SERVICES_LOCATOR));
+  public void clickServices() throws InterruptedException{
+	  WebElement pageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(SERVICES_LOCATOR)));
 	  pageElement.click();
-	}
+  }
   
   //Function to click the Mobile Automation dropdown
-  public void clickMobileAutomation(){
-	  WebElement pageElement = driver.findElement(By.cssSelector(MOBILE_AUTOMATION_LOCATOR));
+  public void clickMobileAutomation() throws InterruptedException{  
+	  //wait = new WebDriverWait (driver, 10);
+	  WebElement pageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(MOBILE_AUTOMATION_LOCATOR)));
 	  pageElement.click();
-	}
+  }
   
   //Function to click the DevOps Consultancy dropdown
-  public void clickDevOpsConsultancy(){
-	  WebElement pageElement = driver.findElement(By.cssSelector(DEVOPS_CONSULTANCY_LOCATOR));
+  public void clickDevOpsConsultancy() throws InterruptedException{
+	  WebElement pageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(DEVOPS_CONSULTANCY_LOCATOR)));
 	  pageElement.click();
-	}
+  }
   
   //Function to click the Software Development dropdown
-  public void clickSoftwareDevelopment(){
-	  WebElement pageElement = driver.findElement(By.cssSelector(SOFTWARE_DEVELOPMENT_LOCATOR));
+  public void clickSoftwareDevelopment() throws InterruptedException{
+	  WebElement pageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(SOFTWARE_DEVELOPMENT_LOCATOR)));
 	  pageElement.click();
-	}
+  }
   
   //Function to click the Agile Coaching dropdown
-  public void clickAgileCoaching(){
-	  WebElement pageElement = driver.findElement(By.cssSelector(AGILE_COACHING_LOCATOR));
+  public void clickAgileCoaching() throws InterruptedException{
+	  WebElement pageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(AGILE_COACHING_LOCATOR)));
 	  pageElement.click();
-	}
+  }
 
   public void tearDown() {
     try {
