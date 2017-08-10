@@ -7,38 +7,34 @@ public class ServicesTest extends AbstractTest{
 	
 	@Test
 	//Function to verify that the Mobile Automation drop down navigates to the correct page.
-	public void verifyNavigationMobileAutomation () throws InterruptedException{
-		page.clickServices();
-		page.clickMobileAutomation();
-		Thread.sleep(2000);
-		Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Mobile and Web Automation", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
+	public void verifyNavigationMobileAutomation () {
+      page.clickServices();
+	  page.clickMobileAutomation();
+	  Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Mobile and Web Automation", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
 	}
 	
 	@Test
 	//Function to verify that the DevOps Consultancy drop down navigates to the correct page.
-	public void verifyNavigationDevOpsConsultancy () throws InterruptedException{
-		page.clickServices();
-		page.clickDevOpsConsultancy();
-		Thread.sleep(2000);
-		Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | DevOps Consultancy", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
+	public void verifyNavigationDevOpsConsultancy () {
+	  page.clickServices();
+	  page.clickDevOpsConsultancy();
+	  Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | DevOps Consultancy", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
 	}
 	
 	@Test
 	//Function to verify that the Software Development drop down navigates to the correct page.
-	public void verifyNavigationSoftwareDevelopment () throws InterruptedException{
-		page.clickServices();
-		page.clickSoftwareDevelopment();
-		Thread.sleep(2000);
-		Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Software Development Consultancy", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
+	public void verifyNavigationSoftwareDevelopment () {
+	  page.clickServices();
+	  page.clickSoftwareDevelopment();
+	  Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Software Development Consultancy", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
 	}
 	
 	@Test
 	//Function to verify that the Agile Coaching drop down navigates to the correct page.
-	public void verifyNavigationAgileCoaching () throws InterruptedException{
-		page.clickServices();
-		page.clickAgileCoaching();
-		Thread.sleep(2000);
-		Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Agile Coaching and Training", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
+	public void verifyNavigationAgileCoaching () {
+	  page.clickServices();
+	  page.clickAgileCoaching();
+	  Assert.assertEquals(page.getTitle(), "QualityWorks Consulting Group | Agile Coaching and Training", "Testing if title is QualityWorks Consulting Group | Mobile and Web Automation");
 	}
 
 }
