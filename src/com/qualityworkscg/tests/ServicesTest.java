@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 public class ServicesTest extends AbstractTest{
 	
 	@Test
+	//Function to verify that the Mobile Automation navigates to the correct page.
 	public void verifyNavigationMobileAutomation () throws InterruptedException{
 		page.clickServices();
 		Thread.sleep(1000);
@@ -15,6 +16,7 @@ public class ServicesTest extends AbstractTest{
 	}
 	
 	@Test
+	//Function to verify that the DevOps Consultancy navigates to the correct page.
 	public void verifyNavigationDevOpsConsultancy () throws InterruptedException{
 		page.clickServices();
 		Thread.sleep(1000);
@@ -24,6 +26,7 @@ public class ServicesTest extends AbstractTest{
 	}
 	
 	@Test
+	//Function to verify that the Software Development navigates to the correct page.
 	public void verifyNavigationSoftwareDevelopment () throws InterruptedException{
 		page.clickServices();
 		Thread.sleep(1000);
@@ -33,6 +36,7 @@ public class ServicesTest extends AbstractTest{
 	}
 	
 	@Test
+	//Function to verify that the Agile Coaching navigates to the correct page.
 	public void verifyNavigationAgileCoaching () throws InterruptedException{
 		page.clickServices();
 		Thread.sleep(1000);
