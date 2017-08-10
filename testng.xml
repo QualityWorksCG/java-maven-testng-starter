@@ -5,6 +5,7 @@
 	<parameter name="url" value="http://www.qualityworkscg.com"></parameter>
     <classes>
       <class name="com.qualityworkscg.tests.HomeTest"/>
+      <class name="com.qualityworkscg.tests.ServicesTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
